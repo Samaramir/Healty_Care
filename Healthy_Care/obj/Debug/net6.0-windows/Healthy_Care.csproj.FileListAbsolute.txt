@@ -19,4 +19,3 @@ C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\r
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Parents.resources
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Teste.resources
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Diagnoais.resources
-C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Form1.resources

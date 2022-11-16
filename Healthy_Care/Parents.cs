@@ -36,5 +36,25 @@ namespace Healthy_Care
         {
 
         }
+
+        private void SaveBox_Click(object sender, EventArgs e)
+        { 
+            if(PatinName.Text=="" || Phonenum.Text==""|| PatAddres.Text=="" || Gander1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Data!!!");
+
+            }
+            else
+            {
+                String Patiens = PatinName.Text;
+                String Gander = Gander1.SelectedItem.ToString();
+                String Data = DatBarth.ToString();
+                String Phone = Phonenum.Text;
+                String Address  = PatAddres.Text;
+                String Query = "insert into patientb1 values";
+
+            }
+
+        }
     }
 }

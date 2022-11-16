@@ -8,5 +8,10 @@ namespace Healthy_Care
 {
     internal class Funcation
     {
+       public Funcation()
+        {
+
+        }
+
     }
 }

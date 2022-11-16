@@ -38,6 +38,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -167,10 +167,18 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(29, 15);
+            this.panel3.Location = new System.Drawing.Point(29, 14);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(844, 202);
             this.panel3.TabIndex = 0;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(505, 61);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(128, 29);
+            this.dateTimePicker1.TabIndex = 22;
             // 
             // button3
             // 
@@ -296,14 +304,6 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Patients";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(505, 61);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(128, 29);
-            this.dateTimePicker1.TabIndex = 22;
-            // 
             // Diagnoais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -314,7 +314,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Diagnoais";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diagnoais";

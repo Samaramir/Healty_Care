@@ -38,21 +38,21 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Gander1 = new System.Windows.Forms.ComboBox();
+            this.DeletBox = new System.Windows.Forms.Button();
+            this.SaveBox = new System.Windows.Forms.Button();
+            this.EditBox = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Phonenum = new System.Windows.Forms.TextBox();
+            this.PatinName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.PatAddres = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.DatBarth = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -155,16 +155,16 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.DatBarth);
+            this.panel3.Controls.Add(this.Gander1);
+            this.panel3.Controls.Add(this.DeletBox);
+            this.panel3.Controls.Add(this.SaveBox);
+            this.panel3.Controls.Add(this.EditBox);
             this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.Phonenum);
+            this.panel3.Controls.Add(this.PatinName);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.PatAddres);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
@@ -174,36 +174,48 @@
             this.panel3.Size = new System.Drawing.Size(843, 202);
             this.panel3.TabIndex = 0;
             // 
-            // button3
+            // Gander1
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(702, 137);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 41);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Gander1.FormattingEnabled = true;
+            this.Gander1.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.Gander1.Location = new System.Drawing.Point(33, 125);
+            this.Gander1.Name = "Gander1";
+            this.Gander1.Size = new System.Drawing.Size(121, 29);
+            this.Gander1.TabIndex = 22;
             // 
-            // button2
+            // DeletBox
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(702, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 41);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.DeletBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.DeletBox.Location = new System.Drawing.Point(702, 137);
+            this.DeletBox.Name = "DeletBox";
+            this.DeletBox.Size = new System.Drawing.Size(102, 41);
+            this.DeletBox.TabIndex = 21;
+            this.DeletBox.Text = "Delete";
+            this.DeletBox.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // SaveBox
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(702, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 41);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SaveBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.SaveBox.Location = new System.Drawing.Point(702, 84);
+            this.SaveBox.Name = "SaveBox";
+            this.SaveBox.Size = new System.Drawing.Size(102, 41);
+            this.SaveBox.TabIndex = 20;
+            this.SaveBox.Text = "Save";
+            this.SaveBox.UseVisualStyleBackColor = false;
+            this.SaveBox.Click += new System.EventHandler(this.SaveBox_Click);
+            // 
+            // EditBox
+            // 
+            this.EditBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.EditBox.Location = new System.Drawing.Point(702, 37);
+            this.EditBox.Name = "EditBox";
+            this.EditBox.Size = new System.Drawing.Size(102, 41);
+            this.EditBox.TabIndex = 19;
+            this.EditBox.Text = "Edit";
+            this.EditBox.UseVisualStyleBackColor = false;
+            this.EditBox.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox5
             // 
@@ -214,38 +226,22 @@
             this.textBox5.Size = new System.Drawing.Size(112, 102);
             this.textBox5.TabIndex = 18;
             // 
-            // textBox4
+            // Phonenum
             // 
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox4.Location = new System.Drawing.Point(267, 134);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(235, 29);
-            this.textBox4.TabIndex = 17;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.Phonenum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Phonenum.Location = new System.Drawing.Point(267, 134);
+            this.Phonenum.Name = "Phonenum";
+            this.Phonenum.Size = new System.Drawing.Size(235, 29);
+            this.Phonenum.TabIndex = 17;
+            this.Phonenum.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox3
+            // PatinName
             // 
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox3.Location = new System.Drawing.Point(267, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(235, 29);
-            this.textBox3.TabIndex = 16;
-            // 
-            // textBox1
-            // 
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(22, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 29);
-            this.textBox1.TabIndex = 15;
-            // 
-            // textBox2
-            // 
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox2.Location = new System.Drawing.Point(22, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 29);
-            this.textBox2.TabIndex = 14;
+            this.PatinName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.PatinName.Location = new System.Drawing.Point(22, 61);
+            this.PatinName.Name = "PatinName";
+            this.PatinName.Size = new System.Drawing.Size(208, 29);
+            this.PatinName.TabIndex = 14;
             // 
             // label11
             // 
@@ -258,15 +254,15 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "Management System";
             // 
-            // label10
+            // PatAddres
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Lime;
-            this.label10.Location = new System.Drawing.Point(519, 37);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 21);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Patients Phone";
+            this.PatAddres.AutoSize = true;
+            this.PatAddres.ForeColor = System.Drawing.Color.Lime;
+            this.PatAddres.Location = new System.Drawing.Point(519, 37);
+            this.PatAddres.Name = "PatAddres";
+            this.PatAddres.Size = new System.Drawing.Size(112, 21);
+            this.PatAddres.TabIndex = 12;
+            this.PatAddres.Text = "Patients Phone";
             // 
             // label9
             // 
@@ -319,6 +315,14 @@
             this.label12.TabIndex = 3;
             this.label12.Text = "Healthy Care Management System";
             // 
+            // DatBarth
+            // 
+            this.DatBarth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DatBarth.Location = new System.Drawing.Point(277, 61);
+            this.DatBarth.Name = "DatBarth";
+            this.DatBarth.Size = new System.Drawing.Size(128, 29);
+            this.DatBarth.TabIndex = 23;
+            // 
             // Parents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -360,19 +364,19 @@
         private Label label2;
         private Label label13;
         private Label label11;
-        private Label label10;
+        private Label PatAddres;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
         private Label label12;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox Phonenum;
+        private TextBox PatinName;
         private TextBox textBox5;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button DeletBox;
+        private Button SaveBox;
+        private Button EditBox;
+        private ComboBox Gander1;
+        private DateTimePicker DatBarth;
     }
 }
