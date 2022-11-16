@@ -1,6 +1,6 @@
 ﻿namespace Healthy_Care
 {
-    partial class Parents
+    partial class Diagnoais
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -52,7 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -67,16 +66,16 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(4, 100);
+            this.panel1.Location = new System.Drawing.Point(2, 62);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(98, 518);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(94, 556);
+            this.panel1.TabIndex = 2;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(25, 440);
+            this.label5.Location = new System.Drawing.Point(11, 438);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 21);
             this.label5.TabIndex = 7;
@@ -127,11 +126,10 @@
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(130, 68);
+            this.panel2.Location = new System.Drawing.Point(144, 40);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(887, 550);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.Size = new System.Drawing.Size(885, 578);
+            this.panel2.TabIndex = 3;
             // 
             // panel4
             // 
@@ -139,7 +137,7 @@
             this.panel4.Controls.Add(this.label13);
             this.panel4.Location = new System.Drawing.Point(29, 240);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(790, 337);
+            this.panel4.Size = new System.Drawing.Size(790, 314);
             this.panel4.TabIndex = 1;
             // 
             // label13
@@ -148,17 +146,17 @@
             this.label13.ForeColor = System.Drawing.Color.Lime;
             this.label13.Location = new System.Drawing.Point(323, 13);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 21);
+            this.label13.Size = new System.Drawing.Size(106, 21);
             this.label13.TabIndex = 3;
-            this.label13.Text = "Patients List";
+            this.label13.Text = "Diagnosis List";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.dateTimePicker1);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.textBox4);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.textBox1);
@@ -171,13 +169,13 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(29, 15);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(843, 202);
+            this.panel3.Size = new System.Drawing.Size(844, 202);
             this.panel3.TabIndex = 0;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(702, 137);
+            this.button3.Location = new System.Drawing.Point(710, 122);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 41);
             this.button3.TabIndex = 21;
@@ -187,7 +185,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(702, 84);
+            this.button2.Location = new System.Drawing.Point(710, 75);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 41);
             this.button2.TabIndex = 20;
@@ -197,36 +195,25 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(702, 37);
+            this.button1.Location = new System.Drawing.Point(710, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 41);
             this.button1.TabIndex = 19;
             this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox5.Location = new System.Drawing.Point(519, 61);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(112, 102);
-            this.textBox5.TabIndex = 18;
             // 
             // textBox4
             // 
             this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox4.Location = new System.Drawing.Point(267, 134);
+            this.textBox4.Location = new System.Drawing.Point(253, 134);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(235, 29);
             this.textBox4.TabIndex = 17;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox3.Location = new System.Drawing.Point(267, 61);
+            this.textBox3.Location = new System.Drawing.Point(253, 61);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(235, 29);
             this.textBox3.TabIndex = 16;
@@ -254,39 +241,40 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label11.Location = new System.Drawing.Point(22, 16);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(171, 21);
+            this.label11.Size = new System.Drawing.Size(191, 21);
             this.label11.TabIndex = 13;
-            this.label11.Text = "Management System";
+            this.label11.Text = "Management Diagnosis";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.Lime;
-            this.label10.Location = new System.Drawing.Point(519, 37);
+            this.label10.Location = new System.Drawing.Point(505, 37);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 21);
+            this.label10.Size = new System.Drawing.Size(114, 21);
             this.label10.TabIndex = 12;
-            this.label10.Text = "Patients Phone";
+            this.label10.Text = "Diagnosis Date";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Lime;
-            this.label9.Location = new System.Drawing.Point(267, 101);
+            this.label9.Location = new System.Drawing.Point(253, 101);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 21);
+            this.label9.Size = new System.Drawing.Size(41, 21);
             this.label9.TabIndex = 11;
-            this.label9.Text = "Patients Phone";
+            this.label9.Text = "Cost";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Lime;
-            this.label8.Location = new System.Drawing.Point(267, 37);
+            this.label8.Location = new System.Drawing.Point(253, 37);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(159, 21);
+            this.label8.Size = new System.Drawing.Size(53, 21);
             this.label8.TabIndex = 10;
-            this.label8.Text = "Patients Date of Barth";
+            this.label8.Text = "Result";
             // 
             // label7
             // 
@@ -294,9 +282,9 @@
             this.label7.ForeColor = System.Drawing.Color.Lime;
             this.label7.Location = new System.Drawing.Point(22, 101);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 21);
+            this.label7.Size = new System.Drawing.Size(36, 21);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Patients  Gander";
+            this.label7.Text = "Test";
             // 
             // label6
             // 
@@ -304,37 +292,32 @@
             this.label6.ForeColor = System.Drawing.Color.Lime;
             this.label6.Location = new System.Drawing.Point(22, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 21);
+            this.label6.Size = new System.Drawing.Size(64, 21);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Patients Name";
+            this.label6.Text = "Patients";
             // 
-            // label12
+            // dateTimePicker1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label12.Location = new System.Drawing.Point(159, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(273, 21);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Healthy Care Management System";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(505, 61);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(128, 29);
+            this.dateTimePicker1.TabIndex = 22;
             // 
-            // Parents
+            // Diagnoais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1029, 630);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Parents";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Diagnoais";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Parents_Load);
+            this.Text = "Diagnoais";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -343,36 +326,34 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label1;
         private Label label2;
+        private Panel panel2;
+        private Panel panel4;
         private Label label13;
+        private Panel panel3;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox1;
+        private TextBox textBox2;
         private Label label11;
         private Label label10;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
-        private Label label12;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox5;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private DateTimePicker dateTimePicker1;
     }
 }
