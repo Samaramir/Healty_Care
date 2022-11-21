@@ -38,11 +38,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.DeleteBox = new System.Windows.Forms.Button();
+            this.SaveBox = new System.Windows.Forms.Button();
+            this.EditBox = new System.Windows.Forms.Button();
+            this.TCostTb = new System.Windows.Forms.TextBox();
+            this.TNameTb = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -76,6 +76,7 @@
             this.label5.Size = new System.Drawing.Size(59, 21);
             this.label5.TabIndex = 7;
             this.label5.Text = "Logout";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -96,6 +97,7 @@
             this.label3.Size = new System.Drawing.Size(78, 21);
             this.label3.TabIndex = 5;
             this.label3.Text = "Diagnosis";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -106,6 +108,7 @@
             this.label1.Size = new System.Drawing.Size(40, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = " Test";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -116,6 +119,7 @@
             this.label2.Size = new System.Drawing.Size(68, 21);
             this.label2.TabIndex = 3;
             this.label2.Text = "Patients ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
@@ -135,12 +139,13 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(843, 313);
             this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.Lime;
-            this.label13.Location = new System.Drawing.Point(323, 13);
+            this.label13.Location = new System.Drawing.Point(370, 17);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(64, 21);
             this.label13.TabIndex = 3;
@@ -149,11 +154,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.DeleteBox);
+            this.panel3.Controls.Add(this.SaveBox);
+            this.panel3.Controls.Add(this.EditBox);
+            this.panel3.Controls.Add(this.TCostTb);
+            this.panel3.Controls.Add(this.TNameTb);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
@@ -162,51 +167,56 @@
             this.panel3.Size = new System.Drawing.Size(843, 202);
             this.panel3.TabIndex = 0;
             // 
-            // button3
+            // DeleteBox
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(475, 132);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 41);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.DeleteBox.Location = new System.Drawing.Point(475, 132);
+            this.DeleteBox.Name = "DeleteBox";
+            this.DeleteBox.Size = new System.Drawing.Size(102, 41);
+            this.DeleteBox.TabIndex = 21;
+            this.DeleteBox.Text = "Delete";
+            this.DeleteBox.UseVisualStyleBackColor = false;
+            this.DeleteBox.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // SaveBox
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(475, 85);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 41);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.SaveBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.SaveBox.Location = new System.Drawing.Point(475, 85);
+            this.SaveBox.Name = "SaveBox";
+            this.SaveBox.Size = new System.Drawing.Size(102, 41);
+            this.SaveBox.TabIndex = 20;
+            this.SaveBox.Text = "Save";
+            this.SaveBox.UseVisualStyleBackColor = false;
+            this.SaveBox.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // EditBox
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(475, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 41);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.EditBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.EditBox.Location = new System.Drawing.Point(475, 37);
+            this.EditBox.Name = "EditBox";
+            this.EditBox.Size = new System.Drawing.Size(102, 41);
+            this.EditBox.TabIndex = 19;
+            this.EditBox.Text = "Edit";
+            this.EditBox.UseVisualStyleBackColor = false;
+            this.EditBox.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // TCostTb
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(22, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 29);
-            this.textBox1.TabIndex = 15;
+            this.TCostTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.TCostTb.Location = new System.Drawing.Point(22, 134);
+            this.TCostTb.Name = "TCostTb";
+            this.TCostTb.Size = new System.Drawing.Size(208, 29);
+            this.TCostTb.TabIndex = 15;
+            this.TCostTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // TNameTb
             // 
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox2.Location = new System.Drawing.Point(22, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 29);
-            this.textBox2.TabIndex = 14;
+            this.TNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.TNameTb.Location = new System.Drawing.Point(22, 61);
+            this.TNameTb.Name = "TNameTb";
+            this.TNameTb.Size = new System.Drawing.Size(208, 29);
+            this.TNameTb.TabIndex = 14;
+            this.TNameTb.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label11
             // 
@@ -289,11 +299,11 @@
         private Panel panel4;
         private Label label13;
         private Panel panel3;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Button DeleteBox;
+        private Button SaveBox;
+        private Button EditBox;
+        private TextBox TCostTb;
+        private TextBox TNameTb;
         private Label label11;
         private Label label7;
         private Label label6;

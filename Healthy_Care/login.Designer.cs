@@ -32,9 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UName = new System.Windows.Forms.TextBox();
+            this.PasswordTb = new System.Windows.Forms.TextBox();
+            this.LoginB = new System.Windows.Forms.Button();
+            this.lebal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,30 +79,42 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Healthy Care Management System";
             // 
-            // textBox1
+            // UName
             // 
-            this.textBox1.Location = new System.Drawing.Point(462, 233);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 29);
-            this.textBox1.TabIndex = 4;
+            this.UName.Location = new System.Drawing.Point(462, 233);
+            this.UName.Name = "UName";
+            this.UName.Size = new System.Drawing.Size(235, 29);
+            this.UName.TabIndex = 4;
             // 
-            // textBox2
+            // PasswordTb
             // 
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox2.Location = new System.Drawing.Point(462, 300);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(235, 29);
-            this.textBox2.TabIndex = 5;
+            this.PasswordTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.PasswordTb.Location = new System.Drawing.Point(462, 300);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(235, 29);
+            this.PasswordTb.TabIndex = 5;
             // 
-            // button1
+            // LoginB
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(544, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 41);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LoginB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.LoginB.Location = new System.Drawing.Point(483, 369);
+            this.LoginB.Name = "LoginB";
+            this.LoginB.Size = new System.Drawing.Size(163, 41);
+            this.LoginB.TabIndex = 6;
+            this.LoginB.Text = "Login";
+            this.LoginB.UseVisualStyleBackColor = false;
+            this.LoginB.Click += new System.EventHandler(this.LoginB_Click);
+            // 
+            // lebal
+            // 
+            this.lebal.AutoSize = true;
+            this.lebal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lebal.Location = new System.Drawing.Point(541, 427);
+            this.lebal.Name = "lebal";
+            this.lebal.Size = new System.Drawing.Size(50, 21);
+            this.lebal.TabIndex = 7;
+            this.lebal.Text = "Rosot";
+            this.lebal.Click += new System.EventHandler(this.Resot_Click);
             // 
             // login
             // 
@@ -109,9 +122,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(921, 582);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lebal);
+            this.Controls.Add(this.LoginB);
+            this.Controls.Add(this.PasswordTb);
+            this.Controls.Add(this.UName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -134,8 +148,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox UName;
+        private TextBox PasswordTb;
+        private Button LoginB;
+        private Label lebal;
     }
 }

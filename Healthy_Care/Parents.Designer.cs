@@ -38,6 +38,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.DatBarth = new System.Windows.Forms.DateTimePicker();
             this.Gander1 = new System.Windows.Forms.ComboBox();
             this.DeletBox = new System.Windows.Forms.Button();
             this.SaveBox = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.DatBarth = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -71,6 +71,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(98, 518);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label5
             // 
@@ -81,6 +82,7 @@
             this.label5.Size = new System.Drawing.Size(59, 21);
             this.label5.TabIndex = 7;
             this.label5.Text = "Logout";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -101,6 +103,7 @@
             this.label3.Size = new System.Drawing.Size(78, 21);
             this.label3.TabIndex = 5;
             this.label3.Text = "Diagnosis";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -111,6 +114,7 @@
             this.label1.Size = new System.Drawing.Size(40, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = " Test";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -121,6 +125,7 @@
             this.label2.Size = new System.Drawing.Size(68, 21);
             this.label2.TabIndex = 3;
             this.label2.Text = "Patients ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
@@ -139,14 +144,15 @@
             this.panel4.Controls.Add(this.label13);
             this.panel4.Location = new System.Drawing.Point(29, 240);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(790, 337);
+            this.panel4.Size = new System.Drawing.Size(790, 296);
             this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.Lime;
-            this.label13.Location = new System.Drawing.Point(323, 13);
+            this.label13.Location = new System.Drawing.Point(313, 11);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(92, 21);
             this.label13.TabIndex = 3;
@@ -174,6 +180,14 @@
             this.panel3.Size = new System.Drawing.Size(843, 202);
             this.panel3.TabIndex = 0;
             // 
+            // DatBarth
+            // 
+            this.DatBarth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DatBarth.Location = new System.Drawing.Point(277, 61);
+            this.DatBarth.Name = "DatBarth";
+            this.DatBarth.Size = new System.Drawing.Size(128, 29);
+            this.DatBarth.TabIndex = 23;
+            // 
             // Gander1
             // 
             this.Gander1.FormattingEnabled = true;
@@ -194,6 +208,7 @@
             this.DeletBox.TabIndex = 21;
             this.DeletBox.Text = "Delete";
             this.DeletBox.UseVisualStyleBackColor = false;
+            this.DeletBox.Click += new System.EventHandler(this.DeletBox_Click);
             // 
             // SaveBox
             // 
@@ -314,14 +329,6 @@
             this.label12.Size = new System.Drawing.Size(273, 21);
             this.label12.TabIndex = 3;
             this.label12.Text = "Healthy Care Management System";
-            // 
-            // DatBarth
-            // 
-            this.DatBarth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DatBarth.Location = new System.Drawing.Point(277, 61);
-            this.DatBarth.Name = "DatBarth";
-            this.DatBarth.Size = new System.Drawing.Size(128, 29);
-            this.DatBarth.TabIndex = 23;
             // 
             // Parents
             // 

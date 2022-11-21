@@ -16,5 +16,30 @@ namespace Healthy_Care
         {
 
         }
+
+        private void Resot_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginB_Click(object sender, EventArgs e)
+        {
+            if (UName.Text == "" || PasswordTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!");
+            }else if(UName.Text=="Admin"&&PasswordTb.Text=="Password")
+            {
+                Parents obj = new Parents();
+                obj.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                UName.Text = "";
+                PasswordTb.Text = "";
+
+            }
+        }
     }
 }
