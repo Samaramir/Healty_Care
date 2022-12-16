@@ -27,7 +27,7 @@ namespace Healthy_Care
             if (UName.Text == "" || PasswordTb.Text == "")
             {
                 MessageBox.Show("Missing Data!!");
-            }else if(UName.Text=="Admin"&&PasswordTb.Text=="Password")
+            }else if(UName.Text=="samar"&&PasswordTb.Text=="amir")
             {
                 Parents obj = new Parents();
                 obj.Show();
@@ -40,6 +40,11 @@ namespace Healthy_Care
                 PasswordTb.Text = "";
 
             }
+        }
+
+        private void UName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

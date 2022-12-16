@@ -146,5 +146,15 @@ namespace Healthy_Care
             obj.Show();
             this.Hide();
         }
+
+        private void PatinName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DatBarth_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
