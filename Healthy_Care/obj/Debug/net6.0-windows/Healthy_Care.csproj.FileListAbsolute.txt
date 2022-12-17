@@ -5,7 +5,6 @@ C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\H
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\Healthy_Care.pdb
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.csproj.AssemblyReference.cache
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.login.resources
-C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Properties.Resources.resources
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.csproj.GenerateResource.cache
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.AssemblyInfoInputs.cache
@@ -16,6 +15,14 @@ C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\r
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.pdb
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.genruntimeconfig.cache
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\ref\Healthy_Care.dll
-C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Parents.resources
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Teste.resources
 C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.Diagnoais.resources
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.patients.resources
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\obj\Debug\net6.0-windows\Healthy_Care.csproj.CopyComplete
+C:\Users\samar\source\repos\Healthy_Care\Healthy_Care\bin\Debug\net6.0-windows\Guna.UI2.dll

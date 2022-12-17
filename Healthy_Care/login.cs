@@ -29,7 +29,7 @@ namespace Healthy_Care
                 MessageBox.Show("Missing Data!!");
             }else if(UName.Text=="samar"&&PasswordTb.Text=="amir")
             {
-                Parents obj = new Parents();
+                patients obj = new patients();
                 obj.Show();
                 this.Hide();
 
